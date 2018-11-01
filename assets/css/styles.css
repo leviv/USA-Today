@@ -3,6 +3,21 @@
  * ****************************/
 body {
   background-color: #494949;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+}
+
+#black-bars {
+  width: 1200px;
+  background: #0B0B0B;
+  height: 100vh;
+  display: block;
+  z-index: -1;
+  position: fixed;
+  margin: 0 auto;
+  left: 50%;
+  top: 90px;
+  margin-left: -600px;
 }
 
 /****************************
@@ -103,6 +118,9 @@ article {
   font-family: Arial, sans-serif;
 }
 
+/****************************
+ * Article Header
+ * ****************************/
 #article-header {
   font-size: 12px;
   line-height: 14px;
@@ -138,7 +156,41 @@ article {
 }
 #article-header #publish-data #updated-date {
   display: inline;
+  font-weight: bold;
   color: #999999;
+}
+
+/****************************
+ * Article Content
+ * ****************************/
+#article-image {
+  width: 180px;
+  display: inline-block;
+  float: left;
+  margin: 0 30px 0 0;
+}
+#article-image img {
+  width: 180px;
+  height: auto;
+  background: #fff;
+  box-shadow: 1px 1px 5px #c8c8c8;
+  padding: 3px;
+}
+#article-image p {
+  font-size: 11px;
+  font-style: italic;
+  line-height: 16px;
+  color: #646464;
+  padding-top: 6px;
+}
+
+#article-text {
+  font: 14px/22px arial, sans-serif;
+  display: inline;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #333;
 }
 
 /*# sourceMappingURL=styles.css.map */
