@@ -115,6 +115,52 @@ nav ul .search {
  *    &:hover
  *      background: #eee */
 /****************************
+ * Social Sidebar Styles
+ * ****************************/
+#social-sidebar {
+  list-style: none;
+  position: fixed;
+  height: 100%;
+  background: #dadcde;
+  box-shadow: inset -2px 0 4px -1px rgba(0, 0, 0, 0.2);
+  width: 40px;
+  top: 0;
+  padding-top: 120px;
+  margin: 0 auto;
+  left: calc(50% - 475px - 40px);
+}
+#social-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+#social-sidebar ul li {
+  text-align: center;
+  padding: 11px 0;
+  border-top: 1px solid #bdbdbd;
+  cursor: pointer;
+}
+#social-sidebar ul li:hover {
+  background-color: #E8E8E8;
+}
+#social-sidebar ul li:last-child {
+  border-bottom: 1px solid #bdbdbd;
+}
+#social-sidebar ul li img {
+  height: 18px;
+}
+#social-sidebar ul.print {
+  height: 100%;
+}
+#social-sidebar ul.print .space {
+  height: calc(100% - 300px);
+  border-top: 0px solid #bdbdbd;
+}
+#social-sidebar ul.print .space:hover {
+  background-color: #dadcde;
+  cursor: auto;
+}
+
+/****************************
  * Article Styles
  * ****************************/
 article {
