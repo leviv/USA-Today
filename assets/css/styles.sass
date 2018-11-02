@@ -57,11 +57,15 @@ nav
   position: absolute
   width: 100%
   z-index: 9999999999999
+  #nav-wrapper
+    border-top: 1px solid $gray
+    padding-top: 3px
   #masthead
     width: 1080px
     margin-left: auto
     margin-right: auto
     h4
+      cursor: pointer
       display: inline-block
       font-family: 'Montserrat', sans-serif
       font-size: 13px
@@ -91,10 +95,9 @@ nav
     margin-left: auto
     margin-right: auto
     font-size: 0
-    &#first
-      width: 1080px
-      @media only screen and (min-width: 1250px)
-        width: 1180px
+    width: 1080px
+    @media only screen and (min-width: 1250px)
+      width: 1180px
     &#second
       display: inline !important
     li
@@ -104,7 +107,7 @@ nav
       margin: 0 !important
       font-family: 'Montserrat', sans-serif
       text-transform: uppercase
-      font-size: 11px
+      font-size: 10px
       line-height: 40px
       letter-spacing: 0px
       font-weight: 700
@@ -142,7 +145,7 @@ nav
     .weather
       border-top-color: $weather
     .search
-      padding-left: 111px
+      padding-left: 80px
 /*    .icon
       &:hover
         background: #eee */
