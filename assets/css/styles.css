@@ -7,6 +7,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 #black-bars {
   width: 1200px;
   background: #0B0B0B;
@@ -30,6 +35,7 @@ nav {
   height: 39px;
   position: fixed;
   width: 100%;
+  z-index: 9999999999999;
 }
 nav ul {
   margin: 0 auto;
@@ -105,6 +111,9 @@ nav ul .search {
   padding-left: 111px;
 }
 
+/*    .icon
+ *    &:hover
+ *      background: #eee */
 /****************************
  * Article Styles
  * ****************************/
@@ -158,6 +167,56 @@ article {
   display: inline;
   font-weight: bold;
   color: #999999;
+}
+
+/****************************
+ * Article Social Icons
+ * ****************************/
+#article-social {
+  display: inline;
+  list-style: none;
+  text-align: left;
+}
+#article-social li {
+  display: inline-block;
+  border-right: 1px solid #d6d6d6;
+  height: 28px;
+  padding: 0 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #999;
+  font-size: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#article-social li:last-child {
+  border-right: 0px solid #d6d6d6;
+}
+#article-social li:hover {
+  color: #000;
+}
+#article-social li.facebook:hover {
+  color: #4863A8;
+}
+#article-social li.twitter:hover {
+  color: #1EB1E8;
+}
+#article-social li.linkedin:hover {
+  color: #5B83BB;
+}
+#article-social li img {
+  display: block;
+  margin: 0 auto;
+  width: 17px;
+  height: auto;
+  position: relative;
+  vertical-align: middle;
+  top: -2px;
+}
+
+#article-social.bottom ul {
+  padding-left: 0;
+  margin-top: 50px;
 }
 
 /****************************

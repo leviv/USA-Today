@@ -11,6 +11,10 @@ $travel: rgb(17, 158, 158)
 $opinion: rgb(102,102,102)
 $weather: #ffc000
 
+$facebook: #4863A8
+$twitter: #1EB1E8
+$linkedin: #5B83BB
+
 =border-radius($radius)
     border-radius: $radius
     -webkit-border-radius: $radius
@@ -25,6 +29,10 @@ body
   background-color: #494949
   text-rendering: geometricPrecision
   -webkit-font-smoothing: antialiased
+
+html, body
+  height: 100%
+  width: 100%
 
 #black-bars
   width: 1200px
@@ -49,6 +57,7 @@ nav
   height: 39px
   position: fixed
   width: 100%
+  z-index: 9999999999999
   ul
     margin: 0 auto
     list-style: none
@@ -69,9 +78,10 @@ nav
       line-height: 40px
       letter-spacing: 0px
       font-weight: bold
-    .nav-logo img
-      width: 152px
-      height: auto
+    .nav-logo
+      img
+        width: 152px
+        height: auto
     .icon img
       width: 18px
       height: auto
@@ -103,6 +113,12 @@ nav
       border-top-color: $weather
     .search
       padding-left: 111px
+/*    .icon
+      &:hover
+        background: #eee */
+
+
+
 
 /****************************
   Article Styles
@@ -151,6 +167,49 @@ article
       display: inline
       font-weight: bold
       color: #999999
+
+/****************************
+  Article Social Icons
+  ****************************/
+
+#article-social
+  display: inline
+  list-style: none
+  text-align: left
+  li
+    display: inline-block
+    border-right: 1px solid #d6d6d6
+    height: 28px
+    padding: 0 10px
+    text-align: center
+    text-transform: uppercase
+    color: #999
+    font-size: 8px
+    font-weight: bold
+    cursor: pointer
+    &:last-child
+      border-right: 0px solid #d6d6d6
+    &:hover
+      color: #000
+    &.facebook:hover
+      color: $facebook
+    &.twitter:hover
+      color: $twitter
+    &.linkedin:hover
+      color: $linkedin
+    img
+      display: block
+      margin: 0 auto
+      width: 17px
+      height: auto
+      position: relative
+      vertical-align: middle
+      top: -2px
+
+#article-social.bottom
+  ul
+    padding-left: 0
+    margin-top: 50px
 
 /****************************
   Article Content
