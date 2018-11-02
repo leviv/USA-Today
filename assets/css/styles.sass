@@ -43,7 +43,7 @@ html, body
   position: fixed
   margin: 0 auto
   left: 50%
-  top: 90px
+  top: 210px
   margin-left: -600px
 
 
@@ -54,19 +54,49 @@ nav
   background: #fff
   border-top: 1px solid $gray
   box-shadow: 0 1px 0 rgba(210,210,210,1)
-  height: 39px
-  position: fixed
+  position: absolute
   width: 100%
   z-index: 9999999999999
-  ul
-    margin: 0 auto
-    list-style: none
+  #masthead
     width: 1080px
     margin-left: auto
     margin-right: auto
-    font-size: 0
+    h4
+      display: inline-block
+      font-family: 'Montserrat', sans-serif
+      font-size: 13px
+      line-height: 15px
+      color: #141414
+      font-weight: 400
+      position: absolute
+      padding-top: 30px
+      right: calc(50% - 600px)
+      span
+        text-transform: uppercase
+        font-size: 16px
+        color: #00a0f8
+        font-weight: bold
+    img
+      height: 80px
+      width: auto
     @media only screen and (min-width: 1250px)
       width: 1180px
+  ul
+    padding-left: 0
+    position: relative
+    top: -2px
+    height: 39px
+    margin: 0 auto
+    list-style: none
+    margin-left: auto
+    margin-right: auto
+    font-size: 0
+    &#first
+      width: 1080px
+      @media only screen and (min-width: 1250px)
+        width: 1180px
+    &#second
+      display: inline !important
     li
       display: inline
       padding: 13px 13px
@@ -77,7 +107,7 @@ nav
       font-size: 11px
       line-height: 40px
       letter-spacing: 0px
-      font-weight: bold
+      font-weight: 700
     .nav-logo
       img
         width: 152px
@@ -131,6 +161,7 @@ nav
   padding-top: 120px
   margin: 0 auto
   left: calc(50% - 475px - 40px)
+  top: 120px
   ul
     list-style: none
     padding-left: 0
@@ -143,7 +174,6 @@ nav
         background-color: #E8E8E8
       &:last-child
         border-bottom: 1px solid #bdbdbd
-      &.print
       img
         height: 18px
   ul.print
@@ -155,10 +185,6 @@ nav
         background-color: #dadcde
         cursor: auto
 
-
-
-
-
 /****************************
   Article Styles
   ****************************/
@@ -167,7 +193,7 @@ article
   background: #fafafa
   margin: 0 auto
   position: relative
-  top: 40px
+  top: 120px
   width: 950px
   padding: 20px 30px 30px 30px
   font-family: Arial, sans-serif
