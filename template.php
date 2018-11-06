@@ -1,3 +1,22 @@
+<?php
+  if ($org == 'USA Today') {
+    $orgName = 'USA TODAY';
+    $orgSlug = 'usa-today';
+    $orgImage = 'assets/img/usa-today-logo.png';
+    $orgNavImage = 'assets/img/usa-today-logo.png';
+    $orgSubscribeText = 'to get home delivery';
+    $favicon = 'assets/img/usa-today-favicon.png';
+  } else if ($org == 'Tennessean') {
+    $orgName = 'Nashville Tennessean';
+    $orgSlug = 'tennesean';
+    $orgImage = 'assets/img/tennassean-logo.png';
+    $orgNavImage = 'assets/img/tennassean-nav-logo.png';
+    $orgSubscribeText = '99¢ first month. Save 90%';
+    $favicon = 'assets/img/tennessean-favicon.png';
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,22 +31,26 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://www.gannett-cdn.com/sites/tennessean/images/favicon.png">
 </head>
 
-<body>
+<body class="<?php echo $orgSlug ?>">
   <div id="black-bars"></div>
   <section id="navbar">
     <nav>
       <div id="masthead">
-        <img src="assets/img/nav-logo.png" alt="USA Today Logo">
-        <h4><span>Subscribe now</span><br>to get home delivery</h4>
+        <img src="<?php echo $orgImage ?>" alt="USA Today Logo">
+        <h4><span>Subscribe now</span><br><?php echo $orgSubscribeText ?></h4>
       </div>
 
       <div id="nav-wrapper">
-        <ul>
+        
+        <ul class="usa-today">
           <li class="nav-logo">
-            <img src="assets/img/nav-logo.png" alt="USA Today logo">
+            <img src="<?php echo $orgNavImage ?>" alt="USA Today logo">
           </li>
           <li class="catagory news">News</li>
           <li class="catagory sports">Sports</li>
@@ -44,11 +67,32 @@
           <li class="catagory elections hide">Elections 2018</li>
           <li class="catagory crosswords hide">Crosswords</li>
           <li class="catagory thanksgiving">Thanksgiving</li>
-          <li class="catagory thanksgiving">More</li>
+          <li class="catagory more">More</li>
 
           <li class="icon search"><img src="assets/img/icon-search.png" alt="Search Icon"></li>
           <li class="icon profile"><img src="assets/img/icon-profile.png" alt="Profile Icon"></li>
         </ul>
+
+        <!--
+        <ul class="tennassean">
+          <li class="nav-logo">
+            <img src="<?php echo $orgNavImage ?>" alt="USA Today logo">
+          </li>
+          <li class="catagory home">Home</li>
+          <li class="catagory news">News</li>
+          <li class="catagory counties">Counties</li>
+          <li class="catagory sports">Sports</li>
+          <li class="catagory business">business</li>
+          <li class="catagory music">music</li>
+          <li class="catagory civility hide">civility Tennessee</li>
+          <li class="catagory politics">politics</li>
+          <li class="catagory jobs hide">jobs</li>
+          <li class="catagory obituaries hide">obituaries</li>
+          <li class="catagory more">More</li>
+
+          <li class="icon search"><img src="assets/img/icon-search.png" alt="Search Icon"></li>
+          <li class="icon profile"><img src="assets/img/icon-profile.png" alt="Profile Icon"></li>
+        </ul> -->
       </div>
     </nav>
   </section>
@@ -69,12 +113,12 @@
     </section>
     <article>
       <section id="article-header">
-        <div id="headline">Trump calls for limiting asylum claims at border as he pushes immigration issue ahead of midterms</div>
+        <div id="headline"><?php echo $articleTitle; ?></div>
         <div id="publish-data">
-          <span id="author">David Jackson</span>,
-          <p id="article-org">USA TODAY</p>
-          <p id="pub-date">Published 11:16 a.m. ET Nov. 1, 2018</p>
-          <p id="updated-date"> | Updated 4:28 p.m. ET Nov. 1, 2018</p>
+          <span id="author"><?php echo $articleAuthor; ?></span>,
+          <p id="article-org"><?php echo $orgName ?></p>
+          <p id="pub-date">Published <?php echo $articlePublishDate; ?></p>
+          <p id="updated-date"><?php echo $articleUpdateDate; ?></p>
         </div>
       </section>
 
@@ -83,8 +127,8 @@
           <div class="row">
             <div class="col-sm-8">
               <div id="article-image">
-                <img src="assets/img/article-image.jpg" alt="Article featured image">
-                <p>(Photo: Photo courtesy Steve West via stevewest4missouri.com)</p>
+                <img src="<?php echo $articleImage; ?>" alt="Article featured image">
+                <p><?php echo $articleCaption; ?></p>
               </div><!-- article-image -->
 
               <div id="article-social">
@@ -99,17 +143,7 @@
               </div><!-- article-social -->
 
               <div id="article-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur blanditiis laboriosam tempore atque nobis commodi temporibus eos, facere minima ea officiis ratione quam cupiditate vel incidunt alias, corporis accusamus nisi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur blanditiis laboriosam tempore atque nobis commodi temporibus eos, facere minima ea officiis ratione quam cupiditate vel incidunt alias, corporis accusamus nisi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur blanditiis laboriosam tempore atque nobis commodi temporibus eos, facere minima ea officiis ratione quam cupiditate vel incidunt alias, corporis accusamus nisi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur blanditiis laboriosam tempore atque nobis commodi temporibus eos, facere minima ea officiis ratione quam cupiditate vel incidunt alias, corporis accusamus nisi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur blanditiis laboriosam tempore atque nobis commodi temporibus eos, facere minima ea officiis ratione quam cupiditate vel incidunt alias, corporis accusamus nisi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur blanditiis laboriosam tempore atque nobis commodi temporibus eos, facere minima ea officiis ratione quam cupiditate vel incidunt alias, corporis accusamus nisi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur blanditiis laboriosam tempore atque nobis commodi temporibus eos, facere minima ea officiis ratione quam cupiditate vel incidunt alias, corporis accusamus nisi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur blanditiis laboriosam tempore atque nobis commodi temporibus eos, facere minima ea officiis ratione quam cupiditate vel incidunt alias, corporis accusamus nisi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur blanditiis laboriosam tempore atque nobis commodi temporibus eos, facere minima ea officiis ratione quam cupiditate vel incidunt alias, corporis accusamus nisi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur blanditiis laboriosam tempore atque nobis commodi temporibus eos, facere minima ea officiis ratione quam cupiditate vel incidunt alias, corporis accusamus nisi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur blanditiis laboriosam tempore atque nobis commodi temporibus eos, facere minima ea officiis ratione quam cupiditate vel incidunt alias, corporis accusamus nisi.</p>
+                <?php echo $articleText; ?>
               </div><!-- article-text -->
               <div id="article-social" class="bottom">
                 <ul>
