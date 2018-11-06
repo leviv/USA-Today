@@ -34,6 +34,10 @@ html, body
   height: 100%
   width: 100%
 
+.masthead #black-bars
+  position: fixed
+  top: 120px
+
 #black-bars
   width: 1200px
   background: #0B0B0B
@@ -43,27 +47,47 @@ html, body
   position: fixed
   margin: 0 auto
   left: 50%
-  top: 210px
+  top: 120px
   margin-left: -600px
-
 
 /****************************
   Nav Styles
   ****************************/
+
+.masthead
+  .hide
+    display: inline
+  .nav-logo
+    display: none
+  nav
+    position: absolute
+  #masthead
+    display: block !important
+  #social-sidebar
+    position: absolute
+    top: 120px
+  #black-bars
+    position: absolute
+    top: 200px
+  #nav-wrapper
+    padding-top: 3px
+
 nav
   background: #fff
   border-top: 1px solid $gray
   box-shadow: 0 1px 0 rgba(210,210,210,1)
-  position: absolute
+  position: fixed
   width: 100%
   z-index: 9999999999999
   #nav-wrapper
     border-top: 1px solid $gray
-    padding-top: 3px
+    padding-top: 0px
+    margin-top: -1px
   #masthead
     width: 1080px
     margin-left: auto
     margin-right: auto
+    display: none
     h4
       cursor: pointer
       display: inline-block
@@ -153,18 +177,23 @@ nav
 /****************************
   Social Sidebar Styles
   ****************************/
+
+.masthead #social-sidebar
+  position: fixed
+  top: 39px
+
+
 #social-sidebar
   list-style: none
   position: fixed
-  height: 100%
+  height: calc(100% - 39px)
   background: #dadcde
   box-shadow: inset -2px 0 4px -1px rgba(0,0,0,.2)
   width: 40px
-  top: 0
+  top: 39px
   padding-top: 120px
   margin: 0 auto
   left: calc(50% - 475px - 40px)
-  top: 120px
   ul
     list-style: none
     padding-left: 0
@@ -181,6 +210,7 @@ nav
         height: 18px
   ul.print
     height: 100%
+    bottom: 0
     .space
       height: calc(100% - 300px)
       border-top: 0px solid #bdbdbd

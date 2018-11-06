@@ -12,6 +12,11 @@ html, body {
   width: 100%;
 }
 
+.masthead #black-bars {
+  position: fixed;
+  top: 120px;
+}
+
 #black-bars {
   width: 1200px;
   background: #0B0B0B;
@@ -21,29 +26,55 @@ html, body {
   position: fixed;
   margin: 0 auto;
   left: 50%;
-  top: 210px;
+  top: 120px;
   margin-left: -600px;
 }
 
 /****************************
  * Nav Styles
  * ****************************/
+.masthead .hide {
+  display: inline;
+}
+.masthead .nav-logo {
+  display: none;
+}
+.masthead nav {
+  position: absolute;
+}
+.masthead #masthead {
+  display: block !important;
+}
+.masthead #social-sidebar {
+  position: absolute;
+  top: 120px;
+}
+.masthead #black-bars {
+  position: absolute;
+  top: 200px;
+}
+.masthead #nav-wrapper {
+  padding-top: 3px;
+}
+
 nav {
   background: #fff;
   border-top: 1px solid #d2d2d2;
   box-shadow: 0 1px 0 #d2d2d2;
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 9999999999999;
 }
 nav #nav-wrapper {
   border-top: 1px solid #d2d2d2;
-  padding-top: 3px;
+  padding-top: 0px;
+  margin-top: -1px;
 }
 nav #masthead {
   width: 1080px;
   margin-left: auto;
   margin-right: auto;
+  display: none;
 }
 nav #masthead h4 {
   cursor: pointer;
@@ -159,18 +190,22 @@ nav ul .search {
 /****************************
  * Social Sidebar Styles
  * ****************************/
+.masthead #social-sidebar {
+  position: fixed;
+  top: 39px;
+}
+
 #social-sidebar {
   list-style: none;
   position: fixed;
-  height: 100%;
+  height: calc(100% - 39px);
   background: #dadcde;
   box-shadow: inset -2px 0 4px -1px rgba(0, 0, 0, 0.2);
   width: 40px;
-  top: 0;
+  top: 39px;
   padding-top: 120px;
   margin: 0 auto;
   left: calc(50% - 475px - 40px);
-  top: 120px;
 }
 #social-sidebar ul {
   list-style: none;
@@ -193,6 +228,7 @@ nav ul .search {
 }
 #social-sidebar ul.print {
   height: 100%;
+  bottom: 0;
 }
 #social-sidebar ul.print .space {
   height: calc(100% - 300px);
