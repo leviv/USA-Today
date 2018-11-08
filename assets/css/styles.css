@@ -373,9 +373,6 @@ article {
   vertical-align: middle;
   top: -2px;
 }
-#article-social ul {
-  padding: 0 40px;
-}
 @media only screen and (max-width: 600px) {
   #article-social {
     margin: auto;
