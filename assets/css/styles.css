@@ -5,6 +5,7 @@ body {
   background-color: #494949;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 html, body {
@@ -66,6 +67,7 @@ body.tennessean ul.usa-today {
 }
 .masthead #nav-wrapper {
   padding-top: 0px;
+  overflow: hidden;
 }
 
 .masthead.tennessean nav ul {
@@ -367,6 +369,17 @@ article {
   vertical-align: middle;
   top: -2px;
 }
+#article-social ul {
+  padding: 0 40px;
+}
+@media only screen and (max-width: 600px) {
+  #article-social {
+    margin: auto;
+    float: none;
+    text-align: center;
+    display: block;
+  }
+}
 
 #article-social.bottom ul {
   padding-left: 0;
@@ -396,6 +409,14 @@ article {
   color: #646464;
   padding-top: 6px;
 }
+@media only screen and (max-width: 600px) {
+  #article-image {
+    margin: auto;
+    float: none;
+    text-align: center;
+    display: block;
+  }
+}
 
 #article-text {
   font: 14px/22px arial, sans-serif;
@@ -404,6 +425,45 @@ article {
   line-height: 22px;
   letter-spacing: 0px;
   color: #333;
+}
+
+/****************************
+ * Reponsive Stuff
+ * ****************************/
+.col-sm-8 {
+  max-width: 98vw;
+}
+@media only screen and (max-width: 900px) {
+  .col-sm-8 {
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    min-width: 100%;
+  }
+}
+.sidebar h1 {
+  font-size: 17px;
+  line-height: 24px;
+  padding-left: 15px;
+  border-left: 7px solid #009bff;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
+.sidebar h1 .link {
+  transition: 0.2s;
+  cursor: pointer;
+  color: #0af;
+  text-decoration: none;
+}
+.sidebar h1 .link:hover {
+  color: #1a95d2;
+}
+
+article {
+  max-width: 100vw;
 }
 
 /*# sourceMappingURL=styles.css.map */

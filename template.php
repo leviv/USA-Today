@@ -144,20 +144,22 @@
               <div id="article-text">
                 <?php echo $articleText; ?>
               </div><!-- article-text -->
-              <div id="article-social" class="bottom">
-                <ul>
-                  <li class="facebook"><img src="assets/img/facebook.png" alt="facebook logo">Connect</li>
-                  <li class="twitter"><img src="assets/img/twitter.png" alt="Twitter logo">Tweet</li>
-                  <li class="linkedin"><img src="assets/img/linkedin.png" alt="LinkedIn logo">LinkedIn</li>
-                  <li><img src="assets/img/comment.png" alt="Comment logo">Comment</li>
-                  <li><img src="assets/img/email.png" alt="Email logo">Email</li>
-                  <li><img src="assets/img/share.png" alt="More logo">More</li>
-                </ul>
-              </div><!-- article-social -->
             </div><!-- col -->
-            <div class="col-sm-4">
-              Sidebar
+            <div class="col-sm-4 sidebar">
+              <div class="sidebar-content">
+                <h1><a class="link">Share your feedback</a> to help improve our site experience!</h1>
+              </div>
             </div><!-- col -->
+            <div id="article-social" class="bottom">
+              <ul>
+                <li class="facebook"><img src="assets/img/facebook.png" alt="facebook logo">Connect</li>
+                <li class="twitter"><img src="assets/img/twitter.png" alt="Twitter logo">Tweet</li>
+                <li class="linkedin"><img src="assets/img/linkedin.png" alt="LinkedIn logo">LinkedIn</li>
+                <li><img src="assets/img/comment.png" alt="Comment logo">Comment</li>
+                <li><img src="assets/img/email.png" alt="Email logo">Email</li>
+                <li><img src="assets/img/share.png" alt="More logo">More</li>
+              </ul>
+            </div><!-- article-social -->
           </div><!-- row --->
         </div><!-- container-fluid -->
       </section>
