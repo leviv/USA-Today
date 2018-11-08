@@ -410,4 +410,11 @@ article {
   color: #333;
 }
 
+/****************************
+ * Article EYP
+ * ****************************/
+#eyp.false {
+  display: none;
+}
+
 /*# sourceMappingURL=styles.css.map */

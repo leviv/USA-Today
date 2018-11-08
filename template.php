@@ -144,6 +144,9 @@
               <div id="article-text">
                 <?php echo $articleText; ?>
               </div><!-- article-text -->
+              <div id="eyp" class="<?php echo $eyp; ?>">
+
+              </div>
               <div id="article-social" class="bottom">
                 <ul>
                   <li class="facebook"><img src="assets/img/facebook.png" alt="facebook logo">Connect</li>
