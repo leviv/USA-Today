@@ -8,7 +8,7 @@
     $favicon = 'assets/img/usa-today-favicon.png';
   } else if ($org == 'Tennessean') {
     $orgName = 'Nashville Tennessean';
-    $orgSlug = 'tennesean';
+    $orgSlug = 'tennessean';
     $orgImage = 'assets/img/tennassean-logo.png';
     $orgNavImage = 'assets/img/tennassean-nav-logo.png';
     $orgSubscribeText = '99¢ first month. Save 90%';
@@ -20,7 +20,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Page Title</title>
+  <title><?php echo $articleTitle; ?></title>
   <meta charset="utf-8" />
   <!-- other meta, CSS, and custom tags -->
 
@@ -47,7 +47,6 @@
       </div>
 
       <div id="nav-wrapper">
-        
         <ul class="usa-today">
           <li class="nav-logo">
             <img src="<?php echo $orgNavImage ?>" alt="USA Today logo">
@@ -73,8 +72,7 @@
           <li class="icon profile"><img src="assets/img/icon-profile.png" alt="Profile Icon"></li>
         </ul>
 
-        <!--
-        <ul class="tennassean">
+        <ul class="tennessean">
           <li class="nav-logo">
             <img src="<?php echo $orgNavImage ?>" alt="USA Today logo">
           </li>
@@ -82,17 +80,18 @@
           <li class="catagory news">News</li>
           <li class="catagory counties">Counties</li>
           <li class="catagory sports">Sports</li>
-          <li class="catagory business">business</li>
-          <li class="catagory music">music</li>
-          <li class="catagory civility hide">civility Tennessee</li>
-          <li class="catagory politics">politics</li>
-          <li class="catagory jobs hide">jobs</li>
-          <li class="catagory obituaries hide">obituaries</li>
+          <li class="catagory business">Business</li>
+          <li class="catagory music">Music</li>
+          <li class="catagory civility hide">Civility Tennessee</li>
+          <li class="catagory politics">Politics</li>
+          <li class="catagory jobs hide">Jobs</li>
+          <li class="catagory obituaries hide">Obituaries</li>
           <li class="catagory more">More</li>
 
           <li class="icon search"><img src="assets/img/icon-search.png" alt="Search Icon"></li>
-          <li class="icon profile"><img src="assets/img/icon-profile.png" alt="Profile Icon"></li>
-        </ul> -->
+          <li class="catagory subscribe">Subscribe</li>
+          <li class="catagory sign-in">Sign In</li>
+        </ul>
       </div>
     </nav>
   </section>

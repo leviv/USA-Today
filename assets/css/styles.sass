@@ -1,6 +1,7 @@
 // Global Variables and mixins
 
 $gray: #d2d2d2
+$blue: #1a95d2
 
 $news: rgb(24, 119, 182)
 $sports: rgb(158, 29, 10)
@@ -10,6 +11,16 @@ $tech: rgb(193, 87, 9)
 $travel: rgb(17, 158, 158)
 $opinion: rgb(102,102,102)
 $weather: #ffc000
+
+// Tennessean colors
+$home: rgb(24, 119, 182)
+$counties: rgb(24, 119, 182)
+$business: rgb(19, 127, 57)
+$music : #004074
+$civility : #004074
+$politics : #004074
+$obituaries : #004074
+
 
 $facebook: #4863A8
 $twitter: #1EB1E8
@@ -50,6 +61,13 @@ html, body
   top: 120px
   margin-left: -600px
 
+body.usa-today ul.tennessean
+  display: none
+
+body.tennessean ul.usa-today
+  display: none
+
+
 /****************************
   Nav Styles
   ****************************/
@@ -61,6 +79,8 @@ html, body
     display: none
   nav
     position: absolute
+    ul
+      top: 0px
   #masthead
     display: block !important
   #social-sidebar
@@ -70,7 +90,10 @@ html, body
     position: absolute
     top: 200px
   #nav-wrapper
-    padding-top: 3px
+    padding-top: 0px
+.masthead.tennessean
+  nav ul
+    top: -2px
 
 nav
   background: #fff
@@ -82,8 +105,8 @@ nav
   #nav-wrapper
     border-top: 1px solid $gray
     padding-top: 0px
-    margin-top: -1px
-    padding-top: 2px
+    margin-top: -2px
+    padding-top: 0px
   #masthead
     width: 1080px
     margin-left: auto
@@ -156,11 +179,13 @@ nav
       border-top-width: 2px
       padding-top: 12px
       border-top-color: $news
+    .home, .counties
+      border-top-color: $home
     .sports
       border-top-color: $sports
     .life
       border-top-color: $life
-    .money
+    .money, .business
       border-top-color: $money
     .tech
       border-top-color: $tech
@@ -170,11 +195,18 @@ nav
       border-top-color: $opinion
     .weather
       border-top-color: $weather
+    .music, .civility, .politics, .obituaries
+      border-top-color: $music
     .search
       padding-left: 80px
-/*    .icon
-      &:hover
-        background: #eee */
+    .subscribe, .sign-in
+      font-size: 14px
+      font-family: sans-serif
+      text-transform: capitalize
+    .subscribe
+      color: #fff
+      background: #029BFF
+
 
 /****************************
   Social Sidebar Styles
@@ -253,7 +285,7 @@ article
     padding: 10px
     #author
       display: inline
-      color: #1a95d2
+      color: $blue
       font-weight: bold
       cursor: pointer
     #article-org

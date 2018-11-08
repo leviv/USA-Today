@@ -1,5 +1,5 @@
 <?php
-$org = 'Tennessean';
+$org = 'Tennessean'; // Either 'USA Today' or 'Tennessean'
 
 $articleTitle = 'Trump calls for limiting asylum claims at border as he pushes immigration issue ahead of midterms';
 $articleAuthor = 'David Jackson';

@@ -30,6 +30,14 @@ html, body {
   margin-left: -600px;
 }
 
+body.usa-today ul.tennessean {
+  display: none;
+}
+
+body.tennessean ul.usa-today {
+  display: none;
+}
+
 /****************************
  * Nav Styles
  * ****************************/
@@ -41,6 +49,9 @@ html, body {
 }
 .masthead nav {
   position: absolute;
+}
+.masthead nav ul {
+  top: 0px;
 }
 .masthead #masthead {
   display: block !important;
@@ -54,7 +65,11 @@ html, body {
   top: 200px;
 }
 .masthead #nav-wrapper {
-  padding-top: 3px;
+  padding-top: 0px;
+}
+
+.masthead.tennessean nav ul {
+  top: -2px;
 }
 
 nav {
@@ -68,8 +83,8 @@ nav {
 nav #nav-wrapper {
   border-top: 1px solid #d2d2d2;
   padding-top: 0px;
-  margin-top: -1px;
-  padding-top: 2px;
+  margin-top: -2px;
+  padding-top: 0px;
 }
 nav #masthead {
   width: 1080px;
@@ -161,13 +176,16 @@ nav ul .news {
   padding-top: 12px;
   border-top-color: #1877b6;
 }
+nav ul .home, nav ul .counties {
+  border-top-color: #1877b6;
+}
 nav ul .sports {
   border-top-color: #9e1d0a;
 }
 nav ul .life {
   border-top-color: #741784;
 }
-nav ul .money {
+nav ul .money, nav ul .business {
   border-top-color: #137f39;
 }
 nav ul .tech {
@@ -182,13 +200,22 @@ nav ul .opinion {
 nav ul .weather {
   border-top-color: #ffc000;
 }
+nav ul .music, nav ul .civility, nav ul .politics, nav ul .obituaries {
+  border-top-color: #004074;
+}
 nav ul .search {
   padding-left: 80px;
 }
+nav ul .subscribe, nav ul .sign-in {
+  font-size: 14px;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+nav ul .subscribe {
+  color: #fff;
+  background: #029BFF;
+}
 
-/*    .icon
- *    &:hover
- *      background: #eee */
 /****************************
  * Social Sidebar Styles
  * ****************************/
