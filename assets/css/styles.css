@@ -214,6 +214,10 @@ nav ul .subscribe, nav ul .sign-in {
 nav ul .subscribe {
   color: #fff;
   background: #029BFF;
+  padding-top: 10px;
+}
+nav ul .sign-in {
+  border-width: 0px;
 }
 
 /****************************
