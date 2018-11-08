@@ -1,5 +1,6 @@
 <?php
-$org = 'USA Today'; // Either 'USA Today' or 'Tennessean'
+$org = 'Tennessean'; // Either 'USA Today' or 'Tennessean'
+$eyp = false;
 
 $articleTitle = 'Trump calls for limiting asylum claims at border as he pushes immigration issue ahead of midterms';
 $articleAuthor = 'David Jackson';
@@ -20,3 +21,5 @@ $articleText = '
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur blanditiis laboriosam tempore atque nobis commodi temporibus eos, facere minima ea officiis ratione quam cupiditate vel incidunt alias, corporis accusamus nisi.</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur blanditiis laboriosam tempore atque nobis commodi temporibus eos, facere minima ea officiis ratione quam cupiditate vel incidunt alias, corporis accusamus nisi.</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur blanditiis laboriosam tempore atque nobis commodi temporibus eos, facere minima ea officiis ratione quam cupiditate vel incidunt alias, corporis accusamus nisi.</p>';
+
+  $eypText = '';

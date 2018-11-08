@@ -144,6 +144,19 @@
               <div id="article-text">
                 <?php echo $articleText; ?>
               </div><!-- article-text -->
+              <div id="eyp" class="<?php echo $eyp; ?>">
+
+              </div>
+              <div id="article-social" class="bottom">
+                <ul>
+                  <li class="facebook"><img src="assets/img/facebook.png" alt="facebook logo">Connect</li>
+                  <li class="twitter"><img src="assets/img/twitter.png" alt="Twitter logo">Tweet</li>
+                  <li class="linkedin"><img src="assets/img/linkedin.png" alt="LinkedIn logo">LinkedIn</li>
+                  <li><img src="assets/img/comment.png" alt="Comment logo">Comment</li>
+                  <li><img src="assets/img/email.png" alt="Email logo">Email</li>
+                  <li><img src="assets/img/share.png" alt="More logo">More</li>
+                </ul>
+              </div><!-- article-social -->
             </div><!-- col -->
             <div class="col-sm-4 sidebar">
               <div class="sidebar-content">
