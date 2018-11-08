@@ -1,12 +1,14 @@
 <?php
-  if ($org == 'USA Today') {
+  $org = strtolower($org);
+
+  if ($org == 'usa today') {
     $orgName = 'USA TODAY';
     $orgSlug = 'usa-today';
     $orgImage = 'assets/img/usa-today-logo.png';
     $orgNavImage = 'assets/img/usa-today-logo.png';
     $orgSubscribeText = 'to get home delivery';
     $favicon = 'assets/img/usa-today-favicon.png';
-  } else if ($org == 'Tennessean') {
+  } else if ($org == 'tennessean') {
     $orgName = 'Nashville Tennessean';
     $orgSlug = 'tennessean';
     $orgImage = 'assets/img/tennassean-logo.png';
