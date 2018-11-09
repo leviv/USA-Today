@@ -61,6 +61,8 @@ html, body
   left: 50%
   top: 120px
   margin-left: -600px
+  @media only screen and (max-width: 950px)
+    display: none
 
 body.usa-today ul.tennessean
   display: none
@@ -103,6 +105,8 @@ nav
   position: fixed
   width: 100%
   z-index: 9999999999999
+  @media only screen and (max-width: 950px)
+    position: absolute
   #nav-wrapper
     padding-top: 0px
     padding-top: 0px
@@ -116,6 +120,9 @@ nav
     margin-left: auto
     margin-right: auto
     display: none
+    @media only screen and (max-width: 1080px)
+      width: 100%
+      padding-left: 15px
     h4
       cursor: pointer
       display: inline-block
@@ -128,6 +135,8 @@ nav
       padding-top: 30px
       right: calc(50% - 600px)
       text-align: center
+      @media only screen and (max-width: 950px)
+        display: none
       span
         text-transform: uppercase
         font-size: 16px
@@ -136,6 +145,7 @@ nav
     img
       height: 80px
       width: auto
+      cursor: pointer
     @media only screen and (min-width: 1250px)
       width: 1180px
   ul
@@ -223,7 +233,6 @@ nav
   position: fixed
   top: 39px
 
-
 #social-sidebar
   list-style: none
   position: fixed
@@ -235,6 +244,8 @@ nav
   padding-top: 120px
   margin: 0 auto
   left: calc(50% - 475px - 40px)
+  @media only screen and (max-width: 950px)
+    display: none
   ul
     list-style: none
     padding-left: 0

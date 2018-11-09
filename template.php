@@ -24,6 +24,7 @@
 <head>
   <title><?php echo $articleTitle; ?></title>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <!-- other meta, CSS, and custom tags -->
 
   <!-- Bootstrap 4 CSS -->
