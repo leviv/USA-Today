@@ -148,7 +148,7 @@
                 <?php echo $articleText; ?>
               </div><!-- article-text -->
               <div id="eyp" class="<?php echo $eyp; ?>">
-
+                  <?php echo $eypText; ?>
               </div>
             </div><!-- col -->
             <div class="col-sm-4 sidebar">
