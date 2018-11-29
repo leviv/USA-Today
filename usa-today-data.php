@@ -3,7 +3,7 @@ $org = 'USA Today'; // Either 'USA Today' or 'Tennessean'
 
 $articleTitle = 'Was Amazon\'s headquarters search \'a giant ruse\'? NYC, D.C. centers of power prevail';
 $articleAuthor = 'Nathan Bomey';
-$articleImage =  'assets/img/usa-today-article-image.jpg';
+$articleImage =  'assets/img/usa-today-article-img.jpg';
 $articleCaption = '(Photo: DON EMMERT, AFP/Getty Images)';
 $articlePublishDate = '11:07 a.m. ET Nov. 13, 2018';
 $articleUpdateDate = ' | Updated 2:23 p.m. ET Nov. 13, 2018';
