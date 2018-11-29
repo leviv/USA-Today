@@ -94,7 +94,7 @@ body.tennessean ul.usa-today
     top: 200px
   #nav-wrapper
     padding-top: 1px
-    overflow: hidden
+    overflow: scroll
 .masthead.tennessean
   nav ul
     top: -2px
@@ -358,6 +358,7 @@ article
       vertical-align: middle
       top: -2px
   ul
+    padding: 0
   @media only screen and (max-width: 600px)
     margin: auto
     float: none
@@ -416,6 +417,7 @@ article
 .sidebar
   @media only screen and (max-width: 900px)
     min-width: 100%
+    margin-top: 20px
   h1
     font-size: 17px
     line-height: 24px
@@ -423,6 +425,8 @@ article
     border-left: 7px solid #009bff
     font-family: Helvetica, sans-serif
     font-weight: bold
+    @media only screen and (max-width: 900px)
+      padding: 10px 0 10px 10px
     .link
       transition: 0.2s
       cursor: pointer

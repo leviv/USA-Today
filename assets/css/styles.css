@@ -72,7 +72,7 @@ body.tennessean ul.usa-today {
 }
 .masthead #nav-wrapper {
   padding-top: 1px;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .masthead.tennessean nav ul {
@@ -407,6 +407,9 @@ article .link {
   vertical-align: middle;
   top: -2px;
 }
+#article-social ul {
+  padding: 0;
+}
 @media only screen and (max-width: 600px) {
   #article-social {
     margin: auto;
@@ -477,6 +480,7 @@ article .link {
 @media only screen and (max-width: 900px) {
   .sidebar {
     min-width: 100%;
+    margin-top: 20px;
   }
 }
 .sidebar h1 {
@@ -486,6 +490,11 @@ article .link {
   border-left: 7px solid #009bff;
   font-family: Helvetica, sans-serif;
   font-weight: bold;
+}
+@media only screen and (max-width: 900px) {
+  .sidebar h1 {
+    padding: 10px 0 10px 10px;
+  }
 }
 .sidebar h1 .link {
   transition: 0.2s;
