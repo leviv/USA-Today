@@ -65,10 +65,10 @@
             <img src="assets/img/weather.png" alt="Weather icon">
             75&#176;
           </li>
-          <li class="catagory investigations">Investigations</li>
-          <li class="catagory elections hide">Elections 2018</li>
           <li class="catagory crosswords hide">Crosswords</li>
-          <li class="catagory thanksgiving">Thanksgiving</li>
+          <li class="catagory investigations">Investigations</li>
+          <li class="catagory elections hide">50 States</li>
+          <li class="catagory thanksgiving">Video</li>
           <li class="catagory more">More</li>
 
           <li class="icon search"><img src="assets/img/icon-search.png" alt="Search Icon"></li>

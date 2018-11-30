@@ -123,10 +123,10 @@ nav #masthead h4 {
   font-weight: 500;
   position: absolute;
   padding-top: 30px;
-  right: calc(50% - 600px);
+  left: calc(73%);
   text-align: center;
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 768px) {
   nav #masthead h4 {
     display: none;
   }
@@ -157,7 +157,7 @@ nav ul {
   margin-left: auto;
   margin-right: auto;
   font-size: 0;
-  width: 1080px;
+  width: 1050px;
 }
 @media only screen and (min-width: 1250px) {
   nav ul {
@@ -231,7 +231,12 @@ nav ul .music, nav ul .civility, nav ul .politics, nav ul .obituaries {
   border-top-color: #004074;
 }
 nav ul .search {
-  padding-left: 80px;
+  padding-left: 10px;
+}
+@media only screen and (min-width: 1250px) {
+  nav ul .search {
+    padding-left: 80px;
+  }
 }
 nav ul .subscribe, nav ul .sign-in {
   font-size: 14px;

@@ -43,7 +43,7 @@ $articleText = '
 
   <p>“We are excited to build new headquarters in New York City and Northern Virginia,” Amazon CEO Jeff Bezos said in a statement. “These two locations will allow us to attract world-class talent that will help us to continue inventing for customers for years to come. The team did a great job selecting these sites, and we look forward to becoming an even bigger part of these communities.”</p>
 
-  <p>Contributing: Elizabeth Weise</p>';
+  <p><i>Contributing: Elizabeth Weise</i></p>';
 
   $eypText = '
   <h4>Why we’re doing this story:</h4>
