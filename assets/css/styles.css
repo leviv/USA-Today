@@ -321,6 +321,14 @@ article {
   padding: 20px 30px 30px 30px;
   font-family: Arial, sans-serif;
 }
+@media only screen and (max-width: 1080px) {
+  article {
+    padding: 20px 15px 30px 15px;
+  }
+  article .container-fluid {
+    padding: 0;
+  }
+}
 article .link {
   cursor: pointer;
   color: #1990e5;
